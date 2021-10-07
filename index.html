@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loading</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div id="luluk">
+   <div id="polosa1"></div>
+   <div id="polosa2"></div>
+   
+   </div>
+   
+    <script>
+let pls1 = document.getElementById(polosa1);
+let pls2 = document.getElementById(polosa2);
+let luluk1 = document.getElementById(luluk);
+function lolik(){
+polosa1.style.transform = "rotate(990deg)"
+polosa1.style.transitionDuration = "3s"
+polosa1.style.transitionTimingFunction = "ease-in-out"
+}
+function lolik1(){
+polosa2.style.transform = "rotate(900deg)"
+polosa2.style.transitionDuration = "3s"
+}
+function afterAll(){
+luluk.style.opacity = "0";
+luluk.style.transitionDuration = "1s"
+console.log("looooool")
+}
+function afterAll1(){
+luluk.style.display = "none";
+console.log("loooooolдщд")
+}
+function afterAll2(){
+document.body.innerHTML = "<p>УБИВАТЬ УБИВАТЬ УБИВАТЬ</p>"
+console.log("loooooolдщдbdfgbb")
+}
+setTimeout(lolik, 1)
+setTimeout(lolik1, 2)
+setTimeout(afterAll, 3000)
+setTimeout(afterAll1, 4001)
+setTimeout(afterAll2, 4001)
+
+    
+</script>
+<style>
+    html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+#polosa1{  
+    position: absolute;
+    width: 60px;
+    height: 15px;
+    background: white;
+    border-radius: 65%;
+    top:calc(50% - 7px);
+    left:calc(50% - 30px);
+}
+#polosa2{  
+    position: absolute;
+    width: 60px;
+    height: 15px;
+    background: white;
+    border-radius: 65%;
+    top:calc(50% - 7px);
+    left:calc(50% - 30px);
+    transform: rotate(90deg);
+}
+#luluk{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+</style>
+</body>
+
+</html>
